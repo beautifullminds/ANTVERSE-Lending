@@ -17,7 +17,11 @@ jobs:
         run: node --test test/*.test.mjs
       - name: Check read-only dead deposit calculator
         run: node scripts/dead-deposit.mjs
-      - name: Verify safety gate
+      - name: Verify production is blocked
         run: |
-          node scripts/risk-gate.mjs && exit 1 || true
-          echo "Prelaunch config correctly blocks production deployment"
+          if node scripts/risk-gate.mjs; then
+            echo "ERROR: Unsafe production gate passed"
+            exit 1
+          else
+            echo "PASS: Missing production prerequisites block deployment"
+          fi
