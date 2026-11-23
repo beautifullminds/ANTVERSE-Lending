@@ -1,0 +1,18 @@
+{
+  "network": "BNB Smart Chain",
+  "chainId": 56,
+  "collateralToken": "0xf9FA938a18D73246298ef99C7d6D75DCA7Eb2A48",
+  "loanAsset": "USDT",
+  "loanAssetAddress": null,
+  "oracleAddress": null,
+  "morphoMarketAddress": null,
+  "vaultFactoryAddress": null,
+  "ownerMultisig": null,
+  "curatorMultisig": null,
+  "allocator": null,
+  "sentinel": null,
+  "targetLoanUSDT": "50000",
+  "maxLtvBps": 0,
+  "borrowingEnabled": false,
+  "mainnetDeploymentApproved": false
+}

@@ -1,0 +1,1 @@
+{"name":"antverse-lending-preflight","private":true,"type":"module","scripts":{"preflight":"node scripts/preflight.mjs","dead-deposit":"node scripts/dead-deposit.mjs"},"dependencies":{"ethers":"^6.15.0"}}
