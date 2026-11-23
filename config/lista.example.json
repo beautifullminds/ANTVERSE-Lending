@@ -1,0 +1,23 @@
+{
+  "chainId": 56,
+  "protocol": "Lista Lending (Moolah)",
+  "marketContract": "0x8F73b65B4caAf64FBA2aF91cC5D4a2A1318E5D8C",
+  "collateralToken": "0xf9FA938a18D73246298ef99C7d6D75DCA7Eb2A48",
+  "loanToken": "0x55d398326f99059fF775485246999027B3197955",
+  "oracle": null,
+  "irm": null,
+  "lltv": null,
+  "marketId": null,
+  "vault": null,
+  "curator": null,
+  "allocator": null,
+  "guardian": null,
+  "owner": null,
+  "financingTargetUSDT": "50000",
+  "borrowingEnabled": false,
+  "marketCreationApproved": false,
+  "oracleVerified": false,
+  "liquidationVerified": false,
+  "independentAuditCompleted": false,
+  "lenderFundingConfirmed": false
+}

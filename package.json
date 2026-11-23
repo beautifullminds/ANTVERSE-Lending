@@ -1,1 +1,15 @@
-{"name":"antverse-lending-preflight","private":true,"type":"module","scripts":{"preflight":"node scripts/preflight.mjs","dead-deposit":"node scripts/dead-deposit.mjs"},"dependencies":{"ethers":"^6.15.0"}}
+{
+  "name": "antverse-lending-preflight",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "preflight": "node scripts/preflight.mjs",
+    "dead-deposit": "node scripts/dead-deposit.mjs",
+    "lista:preflight": "node scripts/lista-preflight.mjs",
+    "lista:market": "node scripts/lista-market-read.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "ethers": "^6.15.0"
+  }
+}
