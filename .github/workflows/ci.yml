@@ -1,0 +1,23 @@
+name: Prelaunch checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run offline tests
+        run: node --test test/*.test.mjs
+      - name: Check read-only dead deposit calculator
+        run: node scripts/dead-deposit.mjs
+      - name: Verify safety gate
+        run: |
+          node scripts/risk-gate.mjs && exit 1 || true
+          echo "Prelaunch config correctly blocks production deployment"
